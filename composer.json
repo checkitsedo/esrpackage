@@ -1,0 +1,40 @@
+{
+    "name": "checkitsedo/esrpackage",
+    "description": "Laravel Swiss ESR Payment Slip with Fpdf (e.g. for Invoiceninja)",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dominik Senti",
+            "email": "dominik@email.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5",
+        "orchestra/testbench": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Checkitsedo\\Esrpackage\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Checkitsedo\\Esrpackage\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+	"laravel": {
+	    "providers": [
+		"Checkit\\Esrpackage\\EsrpackageServiceProvider"
+	    ],
+	    "aliases": {
+		"Esrpackage": "Checkit\\Esrpackage\\EsrpackageFacade"
+	    }
+	}
+    }
+}
