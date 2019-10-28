@@ -21,7 +21,7 @@
  
 namespace Checkitsedo\Esrpackage;
 
-use Checkitsedo\Fpdf;
+require_once('vendor/fpdf/fpdf.php');
 
 class Esrpackage
 {
